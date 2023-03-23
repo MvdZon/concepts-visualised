@@ -1,0 +1,15 @@
+---
+layout: "base.njk"
+---
+
+<div class="project__content">
+    <article class="snap-item">
+        <div class="text-block">
+            <h2 class="project__heading">{{ title }}</h2>
+            <p>{{summary}}</p>
+            <p>{{subtitle}}</p>
+            <b>Scroll a little bit down, or click on the arrow to see visuals</b>
+        </div>
+    </article>
+    {{ content | safe }}
+</div>
