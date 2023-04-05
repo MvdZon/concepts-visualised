@@ -3,10 +3,8 @@
 :root {
     --slate-300: #cbd5e1;
     --slate-600: #475569;
-    --amber-100: #fef3c7;
-    --amber-600: #d97706;
-    --amber-700: #b45309;
-    --amber-800: #92400e;
+    --main-color: #87b3ff;
+    
     --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
     --content-padding: 1.5rem;
@@ -121,14 +119,14 @@ h2 {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    color: var(--amber-600);
+    color: var(--main-color);
 }
 
 .project__heading {
     padding: 1rem 0;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--amber-600);
+    color: var(--main-color);
 }
 
 .project-grid {
@@ -175,19 +173,12 @@ h2 {
     text-decoration: underline;
 }
 
-.project-card__tags {
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 1rem;
-}
-
 .project-card__tag {
     display: flex;
     padding: 0.25rem 0.5rem;
     border-radius: 9999px;
     font-size: 0.75rem;
-    background-color: var(--amber-100);
-    color: var(--amber-800);
+    color: var(--main-color);
 }
 
 .project-card__summary {
@@ -199,7 +190,7 @@ h2 {
     display: inline-flex;
     align-items: center;
     font-weight: 600;
-    color: var(--amber-700);
+    color: var(--main-color);
 }
 
 .project-card__link-icon {
@@ -227,7 +218,7 @@ h2 {
     position: relative;
     margin-bottom: 1rem;
     margin-right: 1rem;
-    color: var(--amber-600);
+    color: var(--main-color);
 }
 
 .header__links {
@@ -235,7 +226,7 @@ h2 {
     gap: 2rem;
     font-size: 1.125rem;
     font-weight: 600;
-    color: var(--amber-700);
+    color: var(--main-color);
 }
 
 .header__link {
@@ -250,7 +241,7 @@ h2 {
     height: 2px;
     width: 100%;
     position: absolute;
-    background-color: var(--amber-700);
+    background-color: var(--main-color);
     transform: scaleX(0);
     transition: transform 0.3s ease 0s;
 }
@@ -263,7 +254,7 @@ h2 {
     padding: 1rem 0;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--amber-600);
+    color: var(--main-color);
 }
 
 /* Project Page Styles */

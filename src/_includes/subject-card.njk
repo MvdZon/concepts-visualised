@@ -3,11 +3,6 @@
       <img class="project__image" src="{{ subject.data.image }}" alt="{{ subject.data.imageAlt }}">
     </div>
     <div class="project-card__body">
-      <div class="project-card__tags">
-        {% for tag in subject.data.tech %}
-          <span class="project-card__tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
       <h3 class="project-card__title">
         <a href="{{ subject.url }}">{{ subject.data.title }}</a>
       </h3>
