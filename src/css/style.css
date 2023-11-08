@@ -92,26 +92,36 @@ p, h2 {
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
+    background-color: #DBDBDC;
+
+    &:nth-child(1) {
+        background-color: var(--pastel-color-dark-orange);
+    }
+
+    &:nth-child(2n) {
+        background-color: var(--pastel-color-light-blue);
+    }
+    &:nth-child(3n) {
+        background-color: var(--pastel-color-blue);
+    }
+    &:nth-child(4n) {
+        background-color: var(--pastel-color-dark-blue);
+    }
+    &:nth-child(5n) {
+        background-color: var(--pastel-color-light-orange);
+    }
+    &:nth-child(6n) {
+        background-color: var(--pastel-color-orange);
+    }
+    &:nth-child(7n) {
+        background-color: var(--pastel-color-dark-orange);
+    }
+    
+    &:last-of-type {
+        margin-bottom: 100px;
+    }
 }
 
-.snap-item:nth-child(2n) {
-    background-color: var(--pastel-color-light-blue);
-}
-.snap-item:nth-child(3n) {
-    background-color: var(--pastel-color-blue);
-}
-.snap-item:nth-child(4n) {
-    background-color: var(--pastel-color-dark-blue);
-}
-.snap-item:nth-child(5n) {
-    background-color: var(--pastel-color-light-orange);
-}
-.snap-item:nth-child(6n) {
-    background-color: var(--pastel-color-orange);
-}
-.snap-item:nth-child(7n) {
-    background-color: var(--pastel-color-dark-orange);
-}
 
 .snap-item__visual,
 .snap-item__header,
@@ -145,10 +155,6 @@ p, h2 {
 .snap-item__header {
     height: 10vh;
     padding-top: 30px;
-}
-
-.snap-item:last-of-type {
-    margin-bottom: 100px;
 }
 
 /* Project Styles */
