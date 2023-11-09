@@ -2,14 +2,27 @@
 layout: "base.njk"
 ---
 
-<div class="project__content">
-   <article class="snap-item">
-      <div class="text-block">
-         <h2 class="project__heading">{{ title }}</h2>
-         <p>{{summary}}</p>
-         <p>{{subtitle}}</p>
-         <p><strong>Use the arrow keys, click on the arrows or use the mousewheel(gently) to navigate between pages</strong></p>
+<div class="subject-grid">
+   <article class="subject first-page"> 
+      <div class="subject__container">
+         <div class="subject__first-page-text-block">
+            <h1>{{ title }}</h1>
+            <p class="subject__summary">{{summary}}</p>
+         </div>
+         <div class="subject__first-page-visual-block">
+            <img src="{{imageUrl}}">
+         </div>
       </div>
    </article>
    {{ content | safe }}
+   <article class="subject last-page">
+      <div class="subject__container">
+         <div class="subject__last-page-text-block">
+            <h2>Sources</h2>
+            <p><a target="_blank" href="{{source1Url}}">{{source1Text}}</a></p>
+            <p><a target="_blank" href="{{source2Url}}">{{source2Text}}</a></p>
+            <h2></h2>
+         </div>
+      </div>
+   </article>
 </div>
