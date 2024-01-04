@@ -33,11 +33,11 @@
     font-style: italic;
 }*/
 
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
     .fade-in-effect > * {
         animation: 0.8s slide-in-from-bottom, 0.8s fade-in forwards;
     }
-}
+}*/
 
 @keyframes slide-in-from-bottom {
     from {
@@ -148,9 +148,9 @@ h2 {
         background-color: var(--pastel-color-red);
     }
 
-    > * {
+    /*> * {
         opacity: 0;
-    }
+    }*/
 
     &.first-page {
         background-color: var(--pastel-color-light-blue);
